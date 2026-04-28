@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Colaborador - Mais Hidro Soluções</title>
+    
+    <!-- Importando a fonte Inter do Google Fonts para um visual moderno e limpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Importando a biblioteca de ícones Phosphor Icons para um visual corporativo -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Importando o Tailwind CSS via CDN para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração de cores personalizadas no Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#e0f2fe', // Azul bem claro para fundos de destaque
+                            DEFAULT: '#0284c7', // Azul principal da marca
+                            dark: '#0369a1', // Azul escuro para hover
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand selection:text-white">
+
+    <!-- CABEÇALHO -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-4 flex justify-between items-center">
+            <!-- Logo e Título ajustáveis -->
+            <div class="flex items-center gap-3 md:gap-5">
+                <img src="https://res.cloudinary.com/dbnyxxhe3/image/upload/v1772102800/02_Prancheta_1_ksm9oj.png" alt="Logo Mais Hidro Soluções" class="h-10 md:h-14 w-auto object-contain">
+                <div class="h-6 md:h-10 w-px bg-slate-200 hidden sm:block"></div>
+                <span class="hidden sm:block text-slate-500 font-bold tracking-widest text-xs md:text-sm uppercase">
+                    Documento Corporativo
+                </span>
+            </div>
+            
+            <a href="#download-section" class="inline-flex items-center justify-center px-4 md:px-6 py-2 border border-transparent text-xs md:text-sm font-semibold rounded-full text-brand bg-brand-light hover:bg-brand hover:text-white transition-colors duration-300">
+                <svg class="w-4 h-4 mr-1 md:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                <span class="hidden md:inline">Baixar Documento</span>
+                <span class="inline md:hidden">Baixar</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ÁREA DE INTRODUÇÃO (HERO) -->
+    <section class="bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 md:pt-20 md:pb-24 text-center">
+            
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight mb-4 md:mb-6">
+                MANUAL DO COLABORADOR
+            </h1>
+            
+            <h2 class="text-lg md:text-2xl font-medium text-slate-500 mb-6 md:mb-8">
+                Bem-vindo à equipe da <span class="text-brand font-bold">MAIS HIDRO SOLUÇÕES</span> !
+            </h2>
+            
+            <div class="mt-4 max-w-4xl mx-auto text-base md:text-lg text-slate-600 leading-relaxed text-left md:text-center px-2 space-y-4">
+                <p>
+                    Este Manual foi elaborado para facilitar sua integração à nossa empresa, auxiliando na compreensão das normas, procedimentos e expectativas de trabalho. Nele, você encontrará informações essenciais sobre a empresa, seus direitos e deveres como colaborador.
+                </p>
+                <p>
+                    Nosso objetivo é fornecer as ferramentas necessárias para que você desempenhe suas atividades com eficiência e segurança. Com seu empenho e determinação, combinados ao nosso suporte, temos certeza de que você poderá alcançar grandes realizações. Valorizamos a colaboração e a inovação, e acreditamos que cada membro da equipe tem um papel importante no nosso crescimento.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL: POLÍTICAS E PROCEDIMENTOS -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        
+        <!-- Grid Responsivo -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            
+            <!-- Card 1: Valores -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-brand/50 hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                <div class="absolute -right-4 -top-6 text-9xl font-black text-brand-light select-none pointer-events-none transition-transform duration-500 group-hover:scale-110 z-0">1</div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-light text-brand shrink-0">
+                            <i class="ph ph-star text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 leading-tight">Nossos Valores</h3>
+                    </div>
+                    <ul class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow space-y-2 list-disc list-inside">
+                        <li><strong>Excelência:</strong> Em tudo o que fazemos e no atendimento.</li>
+                        <li><strong>Inovação:</strong> Novas ideias e tecnologias para melhorar soluções.</li>
+                        <li><strong>Sustentabilidade:</strong> Práticas sustentáveis em nossas operações.</li>
+                        <li><strong>Integridade:</strong> Ética em todas as nossas interações.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 2: Horário de Trabalho -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-brand/50 hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                <div class="absolute -right-4 -top-6 text-9xl font-black text-brand-light select-none pointer-events-none transition-transform duration-500 group-hover:scale-110 z-0">2</div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-light text-brand shrink-0">
+                            <i class="ph ph-clock text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 leading-tight">Horário de Trabalho</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                        Os funcionários devem cumprir o horário estabelecido em seus contratos de trabalho. É importante informar o supervisor ou departamento de RH em caso de atraso ou ausência.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3: Conduta no Local -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-brand/50 hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                <div class="absolute -right-4 -top-6 text-9xl font-black text-brand-light select-none pointer-events-none transition-transform duration-500 group-hover:scale-110 z-0">3</div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-light text-brand shrink-0">
+                            <i class="ph ph-users text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 leading-tight">Conduta no Trabalho</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                        Tratamos colegas, clientes e parceiros com respeito e cortesia. Comportamentos discriminatórios, assédio ou qualquer forma de intimidação não serão tolerados.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4: Segurança -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-brand/50 hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                <div class="absolute -right-4 -top-6 text-9xl font-black text-brand-light select-none pointer-events-none transition-transform duration-500 group-hover:scale-110 z-0">4</div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-light text-brand shrink-0">
+                            <i class="ph ph-hard-hat text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 leading-tight">Segurança no Trabalho</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                        Siga os procedimentos de segurança, participe de treinamentos e relate imediatamente qualquer condição de trabalho insegura ao seu supervisor ou segurança.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5: Uso de Recursos -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-brand/50 hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                <div class="absolute -right-4 -top-6 text-9xl font-black text-brand-light select-none pointer-events-none transition-transform duration-500 group-hover:scale-110 z-0">5</div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-light text-brand shrink-0">
+                            <i class="ph ph-laptop text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 leading-tight">Uso de Recursos da Empresa</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                        Os recursos da empresa, incluindo equipamentos, materiais e tecnologia, devem ser utilizados de forma responsável e apenas para fins comerciais.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 6: Férias -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-brand/50 hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                <div class="absolute -right-4 -top-6 text-9xl font-black text-brand-light select-none pointer-events-none transition-transform duration-500 group-hover:scale-110 z-0">6</div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-light text-brand shrink-0">
+                            <i class="ph ph-sun-horizon text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 leading-tight">Política de Férias</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                        Os funcionários devem solicitar férias com antecedência, de acordo com o procedimento estabelecido. As solicitações estão sujeitas à aprovação da liderança ou RH.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 7: Benefícios -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-brand/50 hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                <div class="absolute -right-4 -top-6 text-9xl font-black text-brand-light select-none pointer-events-none transition-transform duration-500 group-hover:scale-110 z-0">7</div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-light text-brand shrink-0">
+                            <i class="ph ph-gift text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 leading-tight">Benefícios e Compensação</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                        Oferecemos benefícios competitivos e compensação justa, incluindo programa de participação nos lucros com base no desempenho individual e organizacional.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 8: Comunicação Interna -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-brand/50 hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                <div class="absolute -right-4 -top-6 text-9xl font-black text-brand-light select-none pointer-events-none transition-transform duration-500 group-hover:scale-110 z-0">8</div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-light text-brand shrink-0">
+                            <i class="ph ph-chats text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 leading-tight">Comunicação Interna</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                        Encorajamos o compartilhamento de ideias e preocupações. Comunicados importantes serão partilhados por e-mail, murais ou durante reuniões de equipe.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 9: Ética e Conduta -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-brand/50 hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                <div class="absolute -right-4 -top-6 text-9xl font-black text-brand-light select-none pointer-events-none transition-transform duration-500 group-hover:scale-110 z-0">9</div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-light text-brand shrink-0">
+                            <i class="ph ph-scales text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 leading-tight">Código de Ética e Conduta</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                        Aja com honestidade, integridade e ética em todas as suas interações. Qualquer violação deve ser relatada ao departamento de RH.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 10: Saída -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-brand/50 hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                <div class="absolute -right-4 -top-6 text-9xl font-black text-brand-light select-none pointer-events-none transition-transform duration-500 group-hover:scale-110 z-0">10</div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-light text-brand shrink-0">
+                            <i class="ph ph-sign-out text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 leading-tight">Política de Saída</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                        Funcionários que desejam deixar a empresa devem fornecer aviso prévio, concluir todos os procedimentos de saída e devolver as propriedades da empresa.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 11: Revisões -->
+            <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-brand/50 hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                <div class="absolute -right-4 -top-6 text-9xl font-black text-brand-light select-none pointer-events-none transition-transform duration-500 group-hover:scale-110 z-0">11</div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-light text-brand shrink-0">
+                            <i class="ph ph-arrows-clockwise text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 leading-tight">Revisão e Atualização</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                        Este manual é revisado regularmente para refletir as políticas mais recentes. Quaisquer atualizações serão comunicadas a todos os funcionários.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 12 (Destaque - Penalidades) -->
+            <div class="bg-white rounded-xl p-6 md:p-10 shadow-md border-t-4 border-red-500 md:col-span-2 lg:col-span-3 text-center flex flex-col items-center relative overflow-hidden group">
+                <div class="absolute -right-8 -top-12 text-[12rem] leading-none font-black text-slate-100 select-none pointer-events-none transition-transform duration-500 group-hover:scale-105 z-0">12</div>
+                <div class="relative z-10 flex flex-col items-center w-full">
+                    <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-red-50 text-red-500 shrink-0 mb-4 shadow-sm border border-red-100">
+                        <i class="ph ph-warning-octagon text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-6">Políticas de Penalidades</h3>
+                    
+                    <p class="text-slate-600 text-base max-w-3xl mx-auto leading-relaxed mb-6">
+                        Esperamos que todos sigam as normas e políticas da empresa. Decisões relacionadas a penalidades serão tomadas de forma justa e imparcial, levando em consideração as circunstâncias de cada caso. Desvios de conduta podem resultar em:
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-left">
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                            <strong class="text-slate-800 flex items-center mb-1"><i class="ph ph-warning-circle text-red-500 mr-2"></i> Advertência Verbal</strong>
+                            <p class="text-sm text-slate-600">Para infrações menores ou comportamentos inadequados, aplicada pela liderança ou RH.</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                            <strong class="text-slate-800 flex items-center mb-1"><i class="ph ph-file-text text-red-500 mr-2"></i> Advertência Escrita</strong>
+                            <p class="text-sm text-slate-600">Se a infração persistir ou a gravidade exigir, documentando consequências para reincidência.</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                            <strong class="text-slate-800 flex items-center mb-1"><i class="ph ph-prohibit text-red-500 mr-2"></i> Suspensão</strong>
+                            <p class="text-sm text-slate-600">Em infrações repetidas ou graves, suspensão temporária, com ou sem remuneração.</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                            <strong class="text-slate-800 flex items-center mb-1"><i class="ph ph-user-minus text-red-500 mr-2"></i> Demissão</strong>
+                            <p class="text-sm text-slate-600">Em casos extremos, de infrações graves ou irreparáveis, o contrato de trabalho é rescindido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ÁREA DE INFORMAÇÕES EXTRAS E DOWNLOAD -->
+    <section id="download-section" class="bg-white border-t border-slate-200 py-16 md:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50 rounded-2xl p-6 md:p-10 lg:p-12 text-center border border-slate-200">
+                
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Acesse o Documento Oficial</h3>
+                <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+                    Agradecemos por fazer parte da equipa da Mais Hidro Soluções. Juntos, estamos trabalhando para criar um impacto positivo no mundo, fornecendo Soluções hídricas inovadoras e sustentáveis.
+                </p>
+                
+                <div class="flex justify-center mb-10">
+                    <a href="seu-arquivo-aqui.pdf" download="Manual_Colaborador_Mais_Hidro.pdf" class="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-bold rounded-xl text-white bg-brand hover:bg-brand-dark hover:shadow-lg hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Baixar PDF do Manual
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-xl p-5 md:p-8 text-left border border-slate-200 shadow-sm">
+                    <h4 class="text-lg font-bold text-slate-900 mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Informações Adicionais
+                    </h4>
+                    
+                    <div class="space-y-5 text-sm md:text-base text-slate-600">
+                        <p>
+                            <strong class="text-slate-900 font-semibold">Dúvidas ou Informações?</strong><br>
+                            Procure o <span class="font-bold text-brand">Setor Administrativo (ADM)</span>. Estamos à disposição para ajudar com a sua integração.
+                        </p>
+                        
+                        <div class="pt-4 border-t border-slate-100">
+                            <strong class="text-slate-900 font-semibold block mb-2">Acesso via Nuvem Corporativa:</strong>
+                            <div class="bg-slate-100 border border-slate-200 text-slate-800 px-4 py-3 rounded-lg font-mono text-xs md:text-sm overflow-x-auto break-all whitespace-normal sm:whitespace-nowrap">
+                                Z:\01 - Governaça e Direção\01.04 - Politicas Corporativas\MANUAL DO COLABORADOR
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
